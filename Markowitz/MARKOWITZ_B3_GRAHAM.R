@@ -24,6 +24,7 @@ PETR4$variacao_PETR4 <- gsub('%', '', PETR4$variacao_PETR4, fixed = TRUE)
 PETR4$variacao_PETR4 <- as.numeric(PETR4$variacao_PETR4)
 PETR4$variacao_PETR4 <- PETR4$variacao_PETR4/100
 PETR4$data <- as.POSIXct(strptime(PETR4$data, format= "%b %d %Y"))
+PETR4 <- na.omit(PETR4)
 #####
 #OIBR3
 #################
@@ -40,6 +41,7 @@ OIBR3$variacao_OIBR3 <- gsub('%', '', OIBR3$variacao_OIBR3, fixed = TRUE)
 OIBR3$variacao_OIBR3 <- as.numeric(OIBR3$variacao_OIBR3)
 OIBR3$variacao_OIBR3 <- OIBR3$variacao_OIBR3/100
 OIBR3$data <- as.POSIXct(strptime(OIBR3$data, format= "%b %d %Y"))
+OIBR3 <- na.omit(OIBR3)
 #####
 #VVAR3
 #################
@@ -56,6 +58,7 @@ VVAR3$variacao_VVAR3 <- gsub('%', '', VVAR3$variacao_VVAR3, fixed = TRUE)
 VVAR3$variacao_VVAR3 <- as.numeric(VVAR3$variacao_VVAR3)
 VVAR3$variacao_VVAR3 <- VVAR3$variacao_VVAR3/100
 VVAR3$data <- as.POSIXct(strptime(VVAR3$data, format= "%b %d %Y"))
+VVAR3 <- na.omit(VVAR3)
 #####
 #IRBR3
 #################
@@ -72,6 +75,7 @@ IRBR3$variacao_IRBR3 <- gsub('%', '', IRBR3$variacao_IRBR3, fixed = TRUE)
 IRBR3$variacao_IRBR3 <- as.numeric(IRBR3$variacao_IRBR3)
 IRBR3$variacao_IRBR3 <- IRBR3$variacao_IRBR3/100
 IRBR3$data <- as.POSIXct(strptime(IRBR3$data, format= "%b %d %Y"))
+IRBR3 <- na.omit(IRBR3)
 #####
 #COGN3
 #################
@@ -88,6 +92,7 @@ COGN3$variacao_COGN3 <- gsub('%', '', COGN3$variacao_COGN3, fixed = TRUE)
 COGN3$variacao_COGN3 <- as.numeric(COGN3$variacao_COGN3)
 COGN3$variacao_COGN3 <- COGN3$variacao_COGN3/100
 COGN3$data <- as.POSIXct(strptime(COGN3$data, format= "%b %d %Y"))
+COGN3 <- na.omit(COGN3)
 #####
 #BBDC4
 #################
@@ -104,6 +109,7 @@ BBDC4$variacao_BBDC4 <- gsub('%', '', BBDC4$variacao_BBDC4, fixed = TRUE)
 BBDC4$variacao_BBDC4 <- as.numeric(BBDC4$variacao_BBDC4)
 BBDC4$variacao_BBDC4 <- BBDC4$variacao_BBDC4/100
 BBDC4$data <- as.POSIXct(strptime(BBDC4$data, format= "%b %d %Y"))
+BBDC4 <- na.omit(BBDC4)
 #####
 #ITUB4
 #################
@@ -120,6 +126,7 @@ ITUB4$variacao_ITUB4 <- gsub('%', '', ITUB4$variacao_ITUB4, fixed = TRUE)
 ITUB4$variacao_ITUB4 <- as.numeric(ITUB4$variacao_ITUB4)
 ITUB4$variacao_ITUB4 <- ITUB4$variacao_ITUB4/100
 ITUB4$data <- as.POSIXct(strptime(ITUB4$data, format= "%b %d %Y"))
+ITUB4 <- na.omit(ITUB4)
 #####
 #VALE3
 #################
@@ -136,6 +143,7 @@ VALE3$variacao_VALE3 <- gsub('%', '', VALE3$variacao_VALE3, fixed = TRUE)
 VALE3$variacao_VALE3 <- as.numeric(VALE3$variacao_VALE3)
 VALE3$variacao_VALE3 <- VALE3$variacao_VALE3/100
 VALE3$data <- as.POSIXct(strptime(VALE3$data, format= "%b %d %Y"))
+VALE3 <- na.omit(VALE3)
 #####
 #PETR3
 #################
@@ -152,6 +160,7 @@ PETR3$variacao_PETR3 <- gsub('%', '', PETR3$variacao_PETR3, fixed = TRUE)
 PETR3$variacao_PETR3 <- as.numeric(PETR3$variacao_PETR3)
 PETR3$variacao_PETR3 <- PETR3$variacao_PETR3/100
 PETR3$data <- as.POSIXct(strptime(PETR3$data, format= "%b %d %Y"))
+PETR3 <- na.omit(PETR3)
 #####
 #GGBR4
 #################
@@ -168,6 +177,7 @@ GGBR4$variacao_GGBR4 <- gsub('%', '', GGBR4$variacao_GGBR4, fixed = TRUE)
 GGBR4$variacao_GGBR4 <- as.numeric(GGBR4$variacao_GGBR4)
 GGBR4$variacao_GGBR4 <- GGBR4$variacao_GGBR4/100
 GGBR4$data <- as.POSIXct(strptime(GGBR4$data, format= "%b %d %Y"))
+GGBR4 <- na.omit(GGBR4)
 #####
 #ITSA4
 #################
@@ -184,6 +194,7 @@ ITSA4$variacao_ITSA4 <- gsub('%', '', ITSA4$variacao_ITSA4, fixed = TRUE)
 ITSA4$variacao_ITSA4 <- as.numeric(ITSA4$variacao_ITSA4)
 ITSA4$variacao_ITSA4 <- ITSA4$variacao_ITSA4/100
 ITSA4$data <- as.POSIXct(strptime(ITSA4$data, format= "%b %d %Y"))
+ITSA4 <- na.omit(ITSA4)
 #####
 #ABEV3
 #################
@@ -200,6 +211,7 @@ ABEV3$variacao_ABEV3 <- gsub('%', '', ABEV3$variacao_ABEV3, fixed = TRUE)
 ABEV3$variacao_ABEV3 <- as.numeric(ABEV3$variacao_ABEV3)
 ABEV3$variacao_ABEV3 <- ABEV3$variacao_ABEV3/100
 ABEV3$data <- as.POSIXct(strptime(ABEV3$data, format= "%b %d %Y"))
+ABEV3 <- na.omit(ABEV3)
 #####
 #JBSS3
 #################
@@ -216,6 +228,7 @@ JBSS3$variacao_JBSS3 <- gsub('%', '', JBSS3$variacao_JBSS3, fixed = TRUE)
 JBSS3$variacao_JBSS3 <- as.numeric(JBSS3$variacao_JBSS3)
 JBSS3$variacao_JBSS3 <- JBSS3$variacao_JBSS3/100
 JBSS3$data <- as.POSIXct(strptime(JBSS3$data, format= "%b %d %Y"))
+JBSS3 <- na.omit(JBSS3)
 #####
 #RENT3
 #################
@@ -232,6 +245,7 @@ RENT3$variacao_RENT3 <- gsub('%', '', RENT3$variacao_RENT3, fixed = TRUE)
 RENT3$variacao_RENT3 <- as.numeric(RENT3$variacao_RENT3)
 RENT3$variacao_RENT3 <- RENT3$variacao_RENT3/100
 RENT3$data <- as.POSIXct(strptime(RENT3$data, format= "%b %d %Y"))
+RENT3 <- na.omit(RENT3)
 #####
 #B3SA3
 #################
@@ -248,6 +262,7 @@ B3SA3$variacao_B3SA3 <- gsub('%', '', B3SA3$variacao_B3SA3, fixed = TRUE)
 B3SA3$variacao_B3SA3 <- as.numeric(B3SA3$variacao_B3SA3)
 B3SA3$variacao_B3SA3 <- B3SA3$variacao_B3SA3/100
 B3SA3$data <- as.POSIXct(strptime(B3SA3$data, format= "%b %d %Y"))
+B3SA3 <- na.omit(B3SA3)
 #####
 #CIEL3
 #################
@@ -264,6 +279,7 @@ CIEL3$variacao_CIEL3 <- gsub('%', '', CIEL3$variacao_CIEL3, fixed = TRUE)
 CIEL3$variacao_CIEL3 <- as.numeric(CIEL3$variacao_CIEL3)
 CIEL3$variacao_CIEL3 <- CIEL3$variacao_CIEL3/100
 CIEL3$data <- as.POSIXct(strptime(CIEL3$data, format= "%b %d %Y"))
+CIEL3 <- na.omit(CIEL3)
 #####
 #BBAS3
 #################
@@ -280,6 +296,7 @@ BBAS3$variacao_BBAS3 <- gsub('%', '', BBAS3$variacao_BBAS3, fixed = TRUE)
 BBAS3$variacao_BBAS3 <- as.numeric(BBAS3$variacao_BBAS3)
 BBAS3$variacao_BBAS3 <- BBAS3$variacao_BBAS3/100
 BBAS3$data <- as.POSIXct(strptime(BBAS3$data, format= "%b %d %Y"))
+BBAS3 <- na.omit(BBAS3)
 #####
 #CSNA3
 #################
@@ -296,6 +313,7 @@ CSNA3$variacao_CSNA3 <- gsub('%', '', CSNA3$variacao_CSNA3, fixed = TRUE)
 CSNA3$variacao_CSNA3 <- as.numeric(CSNA3$variacao_CSNA3)
 CSNA3$variacao_CSNA3 <- CSNA3$variacao_CSNA3/100
 CSNA3$data <- as.POSIXct(strptime(CSNA3$data, format= "%b %d %Y"))
+CSNA3 <- na.omit(CSNA3)
 #####
 #USIM5
 #################
@@ -312,7 +330,7 @@ USIM5$variacao_USIM5 <- gsub('%', '', USIM5$variacao_USIM5, fixed = TRUE)
 USIM5$variacao_USIM5 <- as.numeric(USIM5$variacao_USIM5)
 USIM5$variacao_USIM5 <- USIM5$variacao_USIM5/100
 USIM5$data <- as.POSIXct(strptime(USIM5$data, format= "%b %d %Y"))
-
+USIM5 <- na.omit(USIM5)
 #####
 #SUZB3
 #################
@@ -329,6 +347,7 @@ SUZB3$variacao_SUZB3 <- gsub('%', '', SUZB3$variacao_SUZB3, fixed = TRUE)
 SUZB3$variacao_SUZB3 <- as.numeric(SUZB3$variacao_SUZB3)
 SUZB3$variacao_SUZB3 <- SUZB3$variacao_SUZB3/100
 SUZB3$data <- as.POSIXct(strptime(SUZB3$data, format= "%b %d %Y"))
+SUZB3 <- na.omit(SUZB3)
 #####
 #GOAU4
 #################
@@ -345,6 +364,7 @@ GOAU4$variacao_GOAU4 <- gsub('%', '', GOAU4$variacao_GOAU4, fixed = TRUE)
 GOAU4$variacao_GOAU4 <- as.numeric(GOAU4$variacao_GOAU4)
 GOAU4$variacao_GOAU4 <- GOAU4$variacao_GOAU4/100
 GOAU4$data <- as.POSIXct(strptime(GOAU4$data, format= "%b %d %Y"))
+GOAU4 <- na.omit(GOAU4)
 #####
 #EMBR3
 #################
@@ -361,6 +381,7 @@ EMBR3$variacao_EMBR3 <- gsub('%', '', EMBR3$variacao_EMBR3, fixed = TRUE)
 EMBR3$variacao_EMBR3 <- as.numeric(EMBR3$variacao_EMBR3)
 EMBR3$variacao_EMBR3 <- EMBR3$variacao_EMBR3/100
 EMBR3$data <- as.POSIXct(strptime(EMBR3$data, format= "%b %d %Y"))
+EMBR3 <- na.omit(EMBR3)
 #####
 #MRFG3
 #################
@@ -377,6 +398,7 @@ MRFG3$variacao_MRFG3 <- gsub('%', '', MRFG3$variacao_MRFG3, fixed = TRUE)
 MRFG3$variacao_MRFG3 <- as.numeric(MRFG3$variacao_MRFG3)
 MRFG3$variacao_MRFG3 <- MRFG3$variacao_MRFG3/100
 MRFG3$data <- as.POSIXct(strptime(MRFG3$data, format= "%b %d %Y"))
+MRFG3 <- na.omit(MRFG3)
 #####
 #GOLL4
 #################
@@ -393,6 +415,7 @@ GOLL4$variacao_GOLL4 <- gsub('%', '', GOLL4$variacao_GOLL4, fixed = TRUE)
 GOLL4$variacao_GOLL4 <- as.numeric(GOLL4$variacao_GOLL4)
 GOLL4$variacao_GOLL4 <- GOLL4$variacao_GOLL4/100
 GOLL4$data <- as.POSIXct(strptime(GOLL4$data, format= "%b %d %Y"))
+GOLL4 <- na.omit(GOLL4)
 #####
 #AZUL4
 #################
@@ -409,6 +432,7 @@ AZUL4$variacao_AZUL4 <- gsub('%', '', AZUL4$variacao_AZUL4, fixed = TRUE)
 AZUL4$variacao_AZUL4 <- as.numeric(AZUL4$variacao_AZUL4)
 AZUL4$variacao_AZUL4 <- AZUL4$variacao_AZUL4/100
 AZUL4$data <- as.POSIXct(strptime(AZUL4$data, format= "%b %d %Y"))
+AZUL4 <- na.omit(AZUL4)
 #####
 #NEOE3
 #################
@@ -425,6 +449,7 @@ NEOE3$variacao_NEOE3 <- gsub('%', '', NEOE3$variacao_NEOE3, fixed = TRUE)
 NEOE3$variacao_NEOE3 <- as.numeric(NEOE3$variacao_NEOE3)
 NEOE3$variacao_NEOE3 <- NEOE3$variacao_NEOE3/100
 NEOE3$data <- as.POSIXct(strptime(NEOE3$data, format= "%b %d %Y"))
+NEOE3 <- na.omit(NEOE3)
 #####
 #BRFS3
 #################
@@ -441,7 +466,7 @@ BRFS3$variacao_BRFS3 <- gsub('%', '', BRFS3$variacao_BRFS3, fixed = TRUE)
 BRFS3$variacao_BRFS3 <- as.numeric(BRFS3$variacao_BRFS3)
 BRFS3$variacao_BRFS3 <- BRFS3$variacao_BRFS3/100
 BRFS3$data <- as.POSIXct(strptime(BRFS3$data, format= "%b %d %Y"))
-
+BRFS3 <- na.omit(BRFS3)
 #####
 #CMIG4
 #################
@@ -458,6 +483,7 @@ CMIG4$variacao_CMIG4 <- gsub('%', '', CMIG4$variacao_CMIG4, fixed = TRUE)
 CMIG4$variacao_CMIG4 <- as.numeric(CMIG4$variacao_CMIG4)
 CMIG4$variacao_CMIG4 <- CMIG4$variacao_CMIG4/100
 CMIG4$data <- as.POSIXct(strptime(CMIG4$data, format= "%b %d %Y"))
+CMIG4 <- na.omit(CMIG4)
 #####
 #CYRE3
 #################
@@ -474,6 +500,7 @@ CYRE3$variacao_CYRE3 <- gsub('%', '', CYRE3$variacao_CYRE3, fixed = TRUE)
 CYRE3$variacao_CYRE3 <- as.numeric(CYRE3$variacao_CYRE3)
 CYRE3$variacao_CYRE3 <- CYRE3$variacao_CYRE3/100
 CYRE3$data <- as.POSIXct(strptime(CYRE3$data, format= "%b %d %Y"))
+CYRE3 <- na.omit(CYRE3)
 #####
 #BRML3
 #################
@@ -490,6 +517,7 @@ BRML3$variacao_BRML3 <- gsub('%', '', BRML3$variacao_BRML3, fixed = TRUE)
 BRML3$variacao_BRML3 <- as.numeric(BRML3$variacao_BRML3)
 BRML3$variacao_BRML3 <- BRML3$variacao_BRML3/100
 BRML3$data <- as.POSIXct(strptime(BRML3$data, format= "%b %d %Y"))
+BRML3 <- na.omit(BRML3)
 #####
 #LREN3
 #################
@@ -506,6 +534,7 @@ LREN3$variacao_LREN3 <- gsub('%', '', LREN3$variacao_LREN3, fixed = TRUE)
 LREN3$variacao_LREN3 <- as.numeric(LREN3$variacao_LREN3)
 LREN3$variacao_LREN3 <- LREN3$variacao_LREN3/100
 LREN3$data <- as.POSIXct(strptime(LREN3$data, format= "%b %d %Y"))
+LREN3 <- na.omit(LREN3)
 ##### 
 #KLBN11
 #################
@@ -522,6 +551,7 @@ KLBN11$variacao_KLBN11 <- gsub('%', '', KLBN11$variacao_KLBN11, fixed = TRUE)
 KLBN11$variacao_KLBN11 <- as.numeric(KLBN11$variacao_KLBN11)
 KLBN11$variacao_KLBN11 <- KLBN11$variacao_KLBN11/100
 KLBN11$data <- as.POSIXct(strptime(KLBN11$data, format= "%b %d %Y"))
+KLBN11 <- na.omit(KLBN11)
 #####
 #HGTX3
 #################
@@ -538,6 +568,7 @@ HGTX3$variacao_HGTX3 <- gsub('%', '', HGTX3$variacao_HGTX3, fixed = TRUE)
 HGTX3$variacao_HGTX3 <- as.numeric(HGTX3$variacao_HGTX3)
 HGTX3$variacao_HGTX3 <- HGTX3$variacao_HGTX3/100
 HGTX3$data <- as.POSIXct(strptime(HGTX3$data, format= "%b %d %Y"))
+HGTX3 <- na.omit(HGTX3)
 #####
 #CCRO3
 #################
@@ -554,6 +585,7 @@ CCRO3$variacao_CCRO3 <- gsub('%', '', CCRO3$variacao_CCRO3, fixed = TRUE)
 CCRO3$variacao_CCRO3 <- as.numeric(CCRO3$variacao_CCRO3)
 CCRO3$variacao_CCRO3 <- CCRO3$variacao_CCRO3/100
 CCRO3$data <- as.POSIXct(strptime(CCRO3$data, format= "%b %d %Y"))
+CCRO3 <- na.omit(CCRO3)
 #####
 #RAIL3
 #################
@@ -570,6 +602,7 @@ RAIL3$variacao_RAIL3 <- gsub('%', '', RAIL3$variacao_RAIL3, fixed = TRUE)
 RAIL3$variacao_RAIL3 <- as.numeric(RAIL3$variacao_RAIL3)
 RAIL3$variacao_RAIL3 <- RAIL3$variacao_RAIL3/100
 RAIL3$data <- as.POSIXct(strptime(RAIL3$data, format= "%b %d %Y"))
+RAIL3 <- na.omit(RAIL3)
 #####
 #MGLU3
 #################
@@ -586,7 +619,7 @@ MGLU3$variacao_MGLU3 <- gsub('%', '', MGLU3$variacao_MGLU3, fixed = TRUE)
 MGLU3$variacao_MGLU3 <- as.numeric(MGLU3$variacao_MGLU3)
 MGLU3$variacao_MGLU3 <- MGLU3$variacao_MGLU3/100
 MGLU3$data <- as.POSIXct(strptime(MGLU3$data, format= "%b %d %Y"))
-
+MGLU3 <- na.omit(MGLU3)
 #####
 #POMO4
 #################
@@ -603,6 +636,7 @@ POMO4$variacao_POMO4 <- gsub('%', '', POMO4$variacao_POMO4, fixed = TRUE)
 POMO4$variacao_POMO4 <- as.numeric(POMO4$variacao_POMO4)
 POMO4$variacao_POMO4 <- POMO4$variacao_POMO4/100
 POMO4$data <- as.POSIXct(strptime(POMO4$data, format= "%b %d %Y"))
+POMO4 <- na.omit(POMO4)
 #####
 #BRKM5
 #################
@@ -619,6 +653,7 @@ BRKM5$variacao_BRKM5 <- gsub('%', '', BRKM5$variacao_BRKM5, fixed = TRUE)
 BRKM5$variacao_BRKM5 <- as.numeric(BRKM5$variacao_BRKM5)
 BRKM5$variacao_BRKM5 <- BRKM5$variacao_BRKM5/100
 BRKM5$data <- as.POSIXct(strptime(BRKM5$data, format= "%b %d %Y"))
+BRKM5 <- na.omit(BRKM5)
 #####
 #TIMP3
 #################
@@ -635,6 +670,7 @@ TIMP3$variacao_TIMP3 <- gsub('%', '', TIMP3$variacao_TIMP3, fixed = TRUE)
 TIMP3$variacao_TIMP3 <- as.numeric(TIMP3$variacao_TIMP3)
 TIMP3$variacao_TIMP3 <- TIMP3$variacao_TIMP3/100
 TIMP3$data <- as.POSIXct(strptime(TIMP3$data, format= "%b %d %Y"))
+TIMP3 <- na.omit(TIMP3)
 #####
 #BEEF3
 #################
@@ -651,6 +687,7 @@ BEEF3$variacao_BEEF3 <- gsub('%', '', BEEF3$variacao_BEEF3, fixed = TRUE)
 BEEF3$variacao_BEEF3 <- as.numeric(BEEF3$variacao_BEEF3)
 BEEF3$variacao_BEEF3 <- BEEF3$variacao_BEEF3/100
 BEEF3$data <- as.POSIXct(strptime(BEEF3$data, format= "%b %d %Y"))
+BEEF3 <- na.omit(BEEF3)
 #####
 #NTCO3
 #################
@@ -667,6 +704,7 @@ NTCO3$variacao_NTCO3 <- gsub('%', '', NTCO3$variacao_NTCO3, fixed = TRUE)
 NTCO3$variacao_NTCO3 <- as.numeric(NTCO3$variacao_NTCO3)
 NTCO3$variacao_NTCO3 <- NTCO3$variacao_NTCO3/100
 NTCO3$data <- as.POSIXct(strptime(NTCO3$data, format= "%b %d %Y"))
+NTCO3 <- na.omit(NTCO3)
 #####
 #UGPA3
 #################
@@ -683,6 +721,7 @@ UGPA3$variacao_UGPA3 <- gsub('%', '', UGPA3$variacao_UGPA3, fixed = TRUE)
 UGPA3$variacao_UGPA3 <- as.numeric(UGPA3$variacao_UGPA3)
 UGPA3$variacao_UGPA3 <- UGPA3$variacao_UGPA3/100
 UGPA3$data <- as.POSIXct(strptime(UGPA3$data, format= "%b %d %Y"))
+UGPA3 <- na.omit(UGPA3)
 #####
 #AMAR3
 #################
@@ -699,6 +738,7 @@ AMAR3$variacao_AMAR3 <- gsub('%', '', AMAR3$variacao_AMAR3, fixed = TRUE)
 AMAR3$variacao_AMAR3 <- as.numeric(AMAR3$variacao_AMAR3)
 AMAR3$variacao_AMAR3 <- AMAR3$variacao_AMAR3/100
 AMAR3$data <- as.POSIXct(strptime(AMAR3$data, format= "%b %d %Y"))
+AMAR3 <- na.omit(AMAR3)
 #####
 #BRDT3
 #################
@@ -715,6 +755,7 @@ BRDT3$variacao_BRDT3 <- gsub('%', '', BRDT3$variacao_BRDT3, fixed = TRUE)
 BRDT3$variacao_BRDT3 <- as.numeric(BRDT3$variacao_BRDT3)
 BRDT3$variacao_BRDT3 <- BRDT3$variacao_BRDT3/100
 BRDT3$data <- as.POSIXct(strptime(BRDT3$data, format= "%b %d %Y"))
+BRDT3 <- na.omit(BRDT3)
 #####
 #TCSA3
 #################
@@ -731,6 +772,7 @@ TCSA3$variacao_TCSA3 <- gsub('%', '', TCSA3$variacao_TCSA3, fixed = TRUE)
 TCSA3$variacao_TCSA3 <- as.numeric(TCSA3$variacao_TCSA3)
 TCSA3$variacao_TCSA3 <- TCSA3$variacao_TCSA3/100
 TCSA3$data <- as.POSIXct(strptime(TCSA3$data, format= "%b %d %Y"))
+TCSA3 <- na.omit(TCSA3)
 #####
 #TOTS3
 #################
@@ -747,6 +789,7 @@ TOTS3$variacao_TOTS3 <- gsub('%', '', TOTS3$variacao_TOTS3, fixed = TRUE)
 TOTS3$variacao_TOTS3 <- as.numeric(TOTS3$variacao_TOTS3)
 TOTS3$variacao_TOTS3 <- TOTS3$variacao_TOTS3/100
 TOTS3$data <- as.POSIXct(strptime(TOTS3$data, format= "%b %d %Y"))
+TOTS3 <- na.omit(TOTS3)
 #####
 #ELET3
 #################
@@ -763,6 +806,7 @@ ELET3$variacao_ELET3 <- gsub('%', '', ELET3$variacao_ELET3, fixed = TRUE)
 ELET3$variacao_ELET3 <- as.numeric(ELET3$variacao_ELET3)
 ELET3$variacao_ELET3 <- ELET3$variacao_ELET3/100
 ELET3$data <- as.POSIXct(strptime(ELET3$data, format= "%b %d %Y"))
+ELET3 <- na.omit(ELET3)
 #####
 #JHSF3
 #################
@@ -779,6 +823,7 @@ JHSF3$variacao_JHSF3 <- gsub('%', '', JHSF3$variacao_JHSF3, fixed = TRUE)
 JHSF3$variacao_JHSF3 <- as.numeric(JHSF3$variacao_JHSF3)
 JHSF3$variacao_JHSF3 <- JHSF3$variacao_JHSF3/100
 JHSF3$data <- as.POSIXct(strptime(JHSF3$data, format= "%b %d %Y"))
+JHSF3 <- na.omit(JHSF3)
 #####
 #BBSE3
 #################
@@ -795,6 +840,7 @@ BBSE3$variacao_BBSE3 <- gsub('%', '', BBSE3$variacao_BBSE3, fixed = TRUE)
 BBSE3$variacao_BBSE3 <- as.numeric(BBSE3$variacao_BBSE3)
 BBSE3$variacao_BBSE3 <- BBSE3$variacao_BBSE3/100
 BBSE3$data <- as.POSIXct(strptime(BBSE3$data, format= "%b %d %Y"))
+BBSE3 <- na.omit(BBSE3)
 #####
 #RAPT4
 #################
@@ -811,6 +857,7 @@ RAPT4$variacao_RAPT4 <- gsub('%', '', RAPT4$variacao_RAPT4, fixed = TRUE)
 RAPT4$variacao_RAPT4 <- as.numeric(RAPT4$variacao_RAPT4)
 RAPT4$variacao_RAPT4 <- RAPT4$variacao_RAPT4/100
 RAPT4$data <- as.POSIXct(strptime(RAPT4$data, format= "%b %d %Y"))
+RAPT4 <- na.omit(RAPT4)
 #####
 #MULT3
 #################
@@ -827,6 +874,7 @@ MULT3$variacao_MULT3 <- gsub('%', '', MULT3$variacao_MULT3, fixed = TRUE)
 MULT3$variacao_MULT3 <- as.numeric(MULT3$variacao_MULT3)
 MULT3$variacao_MULT3 <- MULT3$variacao_MULT3/100
 MULT3$data <- as.POSIXct(strptime(MULT3$data, format= "%b %d %Y"))
+MULT3 <- na.omit(MULT3)
 #####
 #WEGE3
 #################
@@ -843,6 +891,7 @@ WEGE3$variacao_WEGE3 <- gsub('%', '', WEGE3$variacao_WEGE3, fixed = TRUE)
 WEGE3$variacao_WEGE3 <- as.numeric(WEGE3$variacao_WEGE3)
 WEGE3$variacao_WEGE3 <- WEGE3$variacao_WEGE3/100
 WEGE3$data <- as.POSIXct(strptime(WEGE3$data, format= "%b %d %Y"))
+WEGE3 <- na.omit(WEGE3)
 #####
 #EQTL3
 #################
@@ -859,6 +908,7 @@ EQTL3$variacao_EQTL3 <- gsub('%', '', EQTL3$variacao_EQTL3, fixed = TRUE)
 EQTL3$variacao_EQTL3 <- as.numeric(EQTL3$variacao_EQTL3)
 EQTL3$variacao_EQTL3 <- EQTL3$variacao_EQTL3/100
 EQTL3$data <- as.POSIXct(strptime(EQTL3$data, format= "%b %d %Y"))
+EQTL3 <- na.omit(EQTL3)
 #####       
 #FLRY3
 #################
@@ -875,6 +925,7 @@ FLRY3$variacao_FLRY3 <- gsub('%', '', FLRY3$variacao_FLRY3, fixed = TRUE)
 FLRY3$variacao_FLRY3 <- as.numeric(FLRY3$variacao_FLRY3)
 FLRY3$variacao_FLRY3 <- FLRY3$variacao_FLRY3/100
 FLRY3$data <- as.POSIXct(strptime(FLRY3$data, format= "%b %d %Y"))
+FLRY3 <- na.omit(FLRY3)
 #####
 #LAME4
 #################
@@ -891,6 +942,7 @@ LAME4$variacao_LAME4 <- gsub('%', '', LAME4$variacao_LAME4, fixed = TRUE)
 LAME4$variacao_LAME4 <- as.numeric(LAME4$variacao_LAME4)
 LAME4$variacao_LAME4 <- LAME4$variacao_LAME4/100
 LAME4$data <- as.POSIXct(strptime(LAME4$data, format= "%b %d %Y"))
+LAME4 <- na.omit(LAME4)
 #####
 #DTEX3
 #################
@@ -907,6 +959,7 @@ DTEX3$variacao_DTEX3 <- gsub('%', '', DTEX3$variacao_DTEX3, fixed = TRUE)
 DTEX3$variacao_DTEX3 <- as.numeric(DTEX3$variacao_DTEX3)
 DTEX3$variacao_DTEX3 <- DTEX3$variacao_DTEX3/100
 DTEX3$data <- as.POSIXct(strptime(DTEX3$data, format= "%b %d %Y"))
+DTEX3 <- na.omit(DTEX3)
 #####
 #GNDI3
 #################
@@ -923,6 +976,7 @@ GNDI3$variacao_GNDI3 <- gsub('%', '', GNDI3$variacao_GNDI3, fixed = TRUE)
 GNDI3$variacao_GNDI3 <- as.numeric(GNDI3$variacao_GNDI3)
 GNDI3$variacao_GNDI3 <- GNDI3$variacao_GNDI3/100
 GNDI3$data <- as.POSIXct(strptime(GNDI3$data, format= "%b %d %Y"))
+GNDI3 <- na.omit(GNDI3)
 #####
 #SBSP3  
 #################
@@ -939,6 +993,7 @@ SBSP3$variacao_SBSP3 <- gsub('%', '', SBSP3$variacao_SBSP3, fixed = TRUE)
 SBSP3$variacao_SBSP3 <- as.numeric(SBSP3$variacao_SBSP3)
 SBSP3$variacao_SBSP3 <- SBSP3$variacao_SBSP3/100
 SBSP3$data <- as.POSIXct(strptime(SBSP3$data, format= "%b %d %Y"))
+SBSP3 <- na.omit(SBSP3)
 #####
 #MRVE3
 #################
@@ -955,6 +1010,7 @@ MRVE3$variacao_MRVE3 <- gsub('%', '', MRVE3$variacao_MRVE3, fixed = TRUE)
 MRVE3$variacao_MRVE3 <- as.numeric(MRVE3$variacao_MRVE3)
 MRVE3$variacao_MRVE3 <- MRVE3$variacao_MRVE3/100
 MRVE3$data <- as.POSIXct(strptime(MRVE3$data, format= "%b %d %Y"))
+MRVE3 <- na.omit(MRVE3)
 #####
 #BBDC3
 #################
@@ -971,6 +1027,7 @@ BBDC3$variacao_BBDC3 <- gsub('%', '', BBDC3$variacao_BBDC3, fixed = TRUE)
 BBDC3$variacao_BBDC3 <- as.numeric(BBDC3$variacao_BBDC3)
 BBDC3$variacao_BBDC3 <- BBDC3$variacao_BBDC3/100
 BBDC3$data <- as.POSIXct(strptime(BBDC3$data, format= "%b %d %Y"))
+BBDC3 <- na.omit(BBDC3)
 #####
 #HBOR3
 #################
@@ -987,6 +1044,7 @@ HBOR3$variacao_HBOR3 <- gsub('%', '', HBOR3$variacao_HBOR3, fixed = TRUE)
 HBOR3$variacao_HBOR3 <- as.numeric(HBOR3$variacao_HBOR3)
 HBOR3$variacao_HBOR3 <- HBOR3$variacao_HBOR3/100
 HBOR3$data <- as.POSIXct(strptime(HBOR3$data, format= "%b %d %Y"))
+HBOR3 <- na.omit(HBOR3)
 #####
 #SULA11
 #################
@@ -1003,6 +1061,7 @@ SULA11$variacao_SULA11 <- gsub('%', '', SULA11$variacao_SULA11, fixed = TRUE)
 SULA11$variacao_SULA11 <- as.numeric(SULA11$variacao_SULA11)
 SULA11$variacao_SULA11 <- SULA11$variacao_SULA11/100
 SULA11$data <- as.POSIXct(strptime(SULA11$data, format= "%b %d %Y"))
+SULA11 <- na.omit(SULA11)
 #####               
 #POSI3
 #################
@@ -1019,6 +1078,7 @@ POSI3$variacao_POSI3 <- gsub('%', '', POSI3$variacao_POSI3, fixed = TRUE)
 POSI3$variacao_POSI3 <- as.numeric(POSI3$variacao_POSI3)
 POSI3$variacao_POSI3 <- POSI3$variacao_POSI3/100
 POSI3$data <- as.POSIXct(strptime(POSI3$data, format= "%b %d %Y"))
+POSI3 <- na.omit(POSI3)
 #####
 #ECOR3
 #################
@@ -1035,6 +1095,7 @@ ECOR3$variacao_ECOR3 <- gsub('%', '', ECOR3$variacao_ECOR3, fixed = TRUE)
 ECOR3$variacao_ECOR3 <- as.numeric(ECOR3$variacao_ECOR3)
 ECOR3$variacao_ECOR3 <- ECOR3$variacao_ECOR3/100
 ECOR3$data <- as.POSIXct(strptime(ECOR3$data, format= "%b %d %Y"))
+ECOR3 <- na.omit(ECOR3)
 #####
 #GFSA3
 #################
@@ -1051,6 +1112,7 @@ GFSA3$variacao_GFSA3 <- gsub('%', '', GFSA3$variacao_GFSA3, fixed = TRUE)
 GFSA3$variacao_GFSA3 <- as.numeric(GFSA3$variacao_GFSA3)
 GFSA3$variacao_GFSA3 <- GFSA3$variacao_GFSA3/100
 GFSA3$data <- as.POSIXct(strptime(GFSA3$data, format= "%b %d %Y"))
+GFSA3 <- na.omit(GFSA3)
 #####
 #LCAM3
 #################
@@ -1067,6 +1129,7 @@ LCAM3$variacao_LCAM3 <- gsub('%', '', LCAM3$variacao_LCAM3, fixed = TRUE)
 LCAM3$variacao_LCAM3 <- as.numeric(LCAM3$variacao_LCAM3)
 LCAM3$variacao_LCAM3 <- LCAM3$variacao_LCAM3/100
 LCAM3$data <- as.POSIXct(strptime(LCAM3$data, format= "%b %d %Y"))
+LCAM3 <- na.omit(LCAM3)
 #####
 #QUAL3
 #################
@@ -1083,6 +1146,7 @@ QUAL3$variacao_QUAL3 <- gsub('%', '', QUAL3$variacao_QUAL3, fixed = TRUE)
 QUAL3$variacao_QUAL3 <- as.numeric(QUAL3$variacao_QUAL3)
 QUAL3$variacao_QUAL3 <- QUAL3$variacao_QUAL3/100
 QUAL3$data <- as.POSIXct(strptime(QUAL3$data, format= "%b %d %Y"))
+QUAL3 <- na.omit(QUAL3)
 #####
 #PRIO3
 #################
@@ -1099,6 +1163,7 @@ PRIO3$variacao_PRIO3 <- gsub('%', '', PRIO3$variacao_PRIO3, fixed = TRUE)
 PRIO3$variacao_PRIO3 <- as.numeric(PRIO3$variacao_PRIO3)
 PRIO3$variacao_PRIO3 <- PRIO3$variacao_PRIO3/100
 PRIO3$data <- as.POSIXct(strptime(PRIO3$data, format= "%b %d %Y"))
+PRIO3 <- na.omit(PRIO3)
 #####
 #YDUQ3
 #################
@@ -1115,6 +1180,7 @@ YDUQ3$variacao_YDUQ3 <- gsub('%', '', YDUQ3$variacao_YDUQ3, fixed = TRUE)
 YDUQ3$variacao_YDUQ3 <- as.numeric(YDUQ3$variacao_YDUQ3)
 YDUQ3$variacao_YDUQ3 <- YDUQ3$variacao_YDUQ3/100
 YDUQ3$data <- as.POSIXct(strptime(YDUQ3$data, format= "%b %d %Y"))
+YDUQ3 <- na.omit(YDUQ3)
 #####
 #CEAB3
 #################
@@ -1131,6 +1197,7 @@ CEAB3$variacao_CEAB3 <- gsub('%', '', CEAB3$variacao_CEAB3, fixed = TRUE)
 CEAB3$variacao_CEAB3 <- as.numeric(CEAB3$variacao_CEAB3)
 CEAB3$variacao_CEAB3 <- CEAB3$variacao_CEAB3/100
 CEAB3$data <- as.POSIXct(strptime(CEAB3$data, format= "%b %d %Y"))
+CEAB3 <- na.omit(CEAB3)
 #####
 #CPFE3
 #################
@@ -1147,6 +1214,7 @@ CPFE3$variacao_CPFE3 <- gsub('%', '', CPFE3$variacao_CPFE3, fixed = TRUE)
 CPFE3$variacao_CPFE3 <- as.numeric(CPFE3$variacao_CPFE3)
 CPFE3$variacao_CPFE3 <- CPFE3$variacao_CPFE3/100
 CPFE3$data <- as.POSIXct(strptime(CPFE3$data, format= "%b %d %Y"))
+CPFE3 <- na.omit(CPFE3)
 #####
 #MOVI3
 #################
@@ -1163,6 +1231,7 @@ MOVI3$variacao_MOVI3 <- gsub('%', '', MOVI3$variacao_MOVI3, fixed = TRUE)
 MOVI3$variacao_MOVI3 <- as.numeric(MOVI3$variacao_MOVI3)
 MOVI3$variacao_MOVI3 <- MOVI3$variacao_MOVI3/100
 MOVI3$data <- as.POSIXct(strptime(MOVI3$data, format= "%b %d %Y"))
+MOVI3 <- na.omit(MOVI3)
 #####                 
 #STBP3
 #################
@@ -1179,6 +1248,7 @@ STBP3$variacao_STBP3 <- gsub('%', '', STBP3$variacao_STBP3, fixed = TRUE)
 STBP3$variacao_STBP3 <- as.numeric(STBP3$variacao_STBP3)
 STBP3$variacao_STBP3 <- STBP3$variacao_STBP3/100
 STBP3$data <- as.POSIXct(strptime(STBP3$data, format= "%b %d %Y"))
+STBP3 <- na.omit(STBP3)
 #####
 #CNTO3
 #################
@@ -1195,6 +1265,7 @@ CNTO3$variacao_CNTO3 <- gsub('%', '', CNTO3$variacao_CNTO3, fixed = TRUE)
 CNTO3$variacao_CNTO3 <- as.numeric(CNTO3$variacao_CNTO3)
 CNTO3$variacao_CNTO3 <- CNTO3$variacao_CNTO3/100
 CNTO3$data <- as.POSIXct(strptime(CNTO3$data, format= "%b %d %Y"))
+CNTO3 <- na.omit(CNTO3)
 #####
 #BTOW3
 #################
@@ -1211,6 +1282,7 @@ BTOW3$variacao_BTOW3 <- gsub('%', '', BTOW3$variacao_BTOW3, fixed = TRUE)
 BTOW3$variacao_BTOW3 <- as.numeric(BTOW3$variacao_BTOW3)
 BTOW3$variacao_BTOW3 <- BTOW3$variacao_BTOW3/100
 BTOW3$data <- as.POSIXct(strptime(BTOW3$data, format= "%b %d %Y"))
+BTOW3 <- na.omit(BTOW3)
 #####
 #LOGN3
 #################
@@ -1227,6 +1299,7 @@ LOGN3$variacao_LOGN3 <- gsub('%', '', LOGN3$variacao_LOGN3, fixed = TRUE)
 LOGN3$variacao_LOGN3 <- as.numeric(LOGN3$variacao_LOGN3)
 LOGN3$variacao_LOGN3 <- LOGN3$variacao_LOGN3/100
 LOGN3$data <- as.POSIXct(strptime(LOGN3$data, format= "%b %d %Y"))
+LOGN3 <- na.omit(LOGN3)
 #####
 #EVEN3
 #################
@@ -1243,6 +1316,7 @@ EVEN3$variacao_EVEN3 <- gsub('%', '', EVEN3$variacao_EVEN3, fixed = TRUE)
 EVEN3$variacao_EVEN3 <- as.numeric(EVEN3$variacao_EVEN3)
 EVEN3$variacao_EVEN3 <- EVEN3$variacao_EVEN3/100
 EVEN3$data <- as.POSIXct(strptime(EVEN3$data, format= "%b %d %Y"))
+EVEN3 <- na.omit(EVEN3)
 #####
 #ALPA4
 #################
@@ -1259,6 +1333,7 @@ ALPA4$variacao_ALPA4 <- gsub('%', '', ALPA4$variacao_ALPA4, fixed = TRUE)
 ALPA4$variacao_ALPA4 <- as.numeric(ALPA4$variacao_ALPA4)
 ALPA4$variacao_ALPA4 <- ALPA4$variacao_ALPA4/100
 ALPA4$data <- as.POSIXct(strptime(ALPA4$data, format= "%b %d %Y"))
+ALPA4 <- na.omit(ALPA4)
 #####
 #BRSR6
 #################
@@ -1275,6 +1350,7 @@ BRSR6$variacao_BRSR6 <- gsub('%', '', BRSR6$variacao_BRSR6, fixed = TRUE)
 BRSR6$variacao_BRSR6 <- as.numeric(BRSR6$variacao_BRSR6)
 BRSR6$variacao_BRSR6 <- BRSR6$variacao_BRSR6/100
 BRSR6$data <- as.POSIXct(strptime(BRSR6$data, format= "%b %d %Y"))
+BRSR6 <- na.omit(BRSR6)
 #####
 #BPAC11
 #################
@@ -1291,6 +1367,7 @@ BPAC11$variacao_BPAC11 <- gsub('%', '', BPAC11$variacao_BPAC11, fixed = TRUE)
 BPAC11$variacao_BPAC11 <- as.numeric(BPAC11$variacao_BPAC11)
 BPAC11$variacao_BPAC11 <- BPAC11$variacao_BPAC11/100
 BPAC11$data <- as.POSIXct(strptime(BPAC11$data, format= "%b %d %Y"))
+BPAC11 <- na.omit(BPAC11)
 #####
 #CRFB3
 #################
@@ -1307,7 +1384,7 @@ CRFB3$variacao_CRFB3 <- gsub('%', '', CRFB3$variacao_CRFB3, fixed = TRUE)
 CRFB3$variacao_CRFB3 <- as.numeric(CRFB3$variacao_CRFB3)
 CRFB3$variacao_CRFB3 <- CRFB3$variacao_CRFB3/100
 CRFB3$data <- as.POSIXct(strptime(CRFB3$data, format= "%b %d %Y"))
-
+CRFB3 <- na.omit(CRFB3)
 #####
 #EZTC3
 #################
@@ -1324,6 +1401,7 @@ EZTC3$variacao_EZTC3 <- gsub('%', '', EZTC3$variacao_EZTC3, fixed = TRUE)
 EZTC3$variacao_EZTC3 <- as.numeric(EZTC3$variacao_EZTC3)
 EZTC3$variacao_EZTC3 <- EZTC3$variacao_EZTC3/100
 EZTC3$data <- as.POSIXct(strptime(EZTC3$data, format= "%b %d %Y"))
+EZTC3 <- na.omit(EZTC3)
 #####
 #CVCB3
 #################
@@ -1340,6 +1418,7 @@ CVCB3$variacao_CVCB3 <- gsub('%', '', CVCB3$variacao_CVCB3, fixed = TRUE)
 CVCB3$variacao_CVCB3 <- as.numeric(CVCB3$variacao_CVCB3)
 CVCB3$variacao_CVCB3 <- CVCB3$variacao_CVCB3/100
 CVCB3$data <- as.POSIXct(strptime(CVCB3$data, format= "%b %d %Y"))
+CVCB3 <- na.omit(CVCB3)
 #####
 #SANB11
 #################
@@ -1356,6 +1435,7 @@ SANB11$variacao_SANB11 <- gsub('%', '', SANB11$variacao_SANB11, fixed = TRUE)
 SANB11$variacao_SANB11 <- as.numeric(SANB11$variacao_SANB11)
 SANB11$variacao_SANB11 <- SANB11$variacao_SANB11/100
 SANB11$data <- as.POSIXct(strptime(SANB11$data, format= "%b %d %Y"))
+SANB11 <- na.omit(SANB11)
 #####
 #ENBR3
 #################
@@ -1372,6 +1452,7 @@ ENBR3$variacao_ENBR3 <- gsub('%', '', ENBR3$variacao_ENBR3, fixed = TRUE)
 ENBR3$variacao_ENBR3 <- as.numeric(ENBR3$variacao_ENBR3)
 ENBR3$variacao_ENBR3 <- ENBR3$variacao_ENBR3/100
 ENBR3$data <- as.POSIXct(strptime(ENBR3$data, format= "%b %d %Y"))
+ENBR3 <- na.omit(ENBR3)
 #####
 #ENAT3
 #################
@@ -1388,6 +1469,7 @@ ENAT3$variacao_ENAT3 <- gsub('%', '', ENAT3$variacao_ENAT3, fixed = TRUE)
 ENAT3$variacao_ENAT3 <- as.numeric(ENAT3$variacao_ENAT3)
 ENAT3$variacao_ENAT3 <- ENAT3$variacao_ENAT3/100
 ENAT3$data <- as.POSIXct(strptime(ENAT3$data, format= "%b %d %Y"))
+ENAT3 <- na.omit(ENAT3)
 #####
 #MEAL3
 #################
@@ -1404,6 +1486,7 @@ MEAL3$variacao_MEAL3 <- gsub('%', '', MEAL3$variacao_MEAL3, fixed = TRUE)
 MEAL3$variacao_MEAL3 <- as.numeric(MEAL3$variacao_MEAL3)
 MEAL3$variacao_MEAL3 <- MEAL3$variacao_MEAL3/100
 MEAL3$data <- as.POSIXct(strptime(MEAL3$data, format= "%b %d %Y"))
+MEAL3 <- na.omit(MEAL3)
 #####
 #LIGT3
 #################
@@ -1420,6 +1503,7 @@ LIGT3$variacao_LIGT3 <- gsub('%', '', LIGT3$variacao_LIGT3, fixed = TRUE)
 LIGT3$variacao_LIGT3 <- as.numeric(LIGT3$variacao_LIGT3)
 LIGT3$variacao_LIGT3 <- LIGT3$variacao_LIGT3/100
 LIGT3$data <- as.POSIXct(strptime(LIGT3$data, format= "%b %d %Y"))
+LIGT3 <- na.omit(LIGT3)
 #####
 #HAPV3
 #################
@@ -1436,6 +1520,7 @@ HAPV3$variacao_HAPV3 <- gsub('%', '', HAPV3$variacao_HAPV3, fixed = TRUE)
 HAPV3$variacao_HAPV3 <- as.numeric(HAPV3$variacao_HAPV3)
 HAPV3$variacao_HAPV3 <- HAPV3$variacao_HAPV3/100
 HAPV3$data <- as.POSIXct(strptime(HAPV3$data, format= "%b %d %Y"))
+HAPV3 <- na.omit(HAPV3)
 #####
 #VIVT4
 #################
@@ -1452,6 +1537,7 @@ VIVT4$variacao_VIVT4 <- gsub('%', '', VIVT4$variacao_VIVT4, fixed = TRUE)
 VIVT4$variacao_VIVT4 <- as.numeric(VIVT4$variacao_VIVT4)
 VIVT4$variacao_VIVT4 <- VIVT4$variacao_VIVT4/100
 VIVT4$data <- as.POSIXct(strptime(VIVT4$data, format= "%b %d %Y"))
+VIVT4 <- na.omit(VIVT4)
 #####
 #ELET6
 #################
@@ -1468,6 +1554,7 @@ ELET6$variacao_ELET6 <- gsub('%', '', ELET6$variacao_ELET6, fixed = TRUE)
 ELET6$variacao_ELET6 <- as.numeric(ELET6$variacao_ELET6)
 ELET6$variacao_ELET6 <- ELET6$variacao_ELET6/100
 ELET6$data <- as.POSIXct(strptime(ELET6$data, format= "%b %d %Y"))
+ELET6 <- na.omit(ELET6)
 #####
 #ALSO3
 #################
@@ -1484,6 +1571,7 @@ ALSO3$variacao_ALSO3 <- gsub('%', '', ALSO3$variacao_ALSO3, fixed = TRUE)
 ALSO3$variacao_ALSO3 <- as.numeric(ALSO3$variacao_ALSO3)
 ALSO3$variacao_ALSO3 <- ALSO3$variacao_ALSO3/100
 ALSO3$data <- as.POSIXct(strptime(ALSO3$data, format= "%b %d %Y"))
+ALSO3 <- na.omit(ALSO3)
 #####
 #HYPE3
 #################
@@ -1500,6 +1588,7 @@ HYPE3$variacao_HYPE3 <- gsub('%', '', HYPE3$variacao_HYPE3, fixed = TRUE)
 HYPE3$variacao_HYPE3 <- as.numeric(HYPE3$variacao_HYPE3)
 HYPE3$variacao_HYPE3 <- HYPE3$variacao_HYPE3/100
 HYPE3$data <- as.POSIXct(strptime(HYPE3$data, format= "%b %d %Y"))
+HYPE3 <- na.omit(HYPE3)
 #####
 #BRPR3
 #################
@@ -1516,6 +1605,7 @@ BRPR3$variacao_BRPR3 <- gsub('%', '', BRPR3$variacao_BRPR3, fixed = TRUE)
 BRPR3$variacao_BRPR3 <- as.numeric(BRPR3$variacao_BRPR3)
 BRPR3$variacao_BRPR3 <- BRPR3$variacao_BRPR3/100
 BRPR3$data <- as.POSIXct(strptime(BRPR3$data, format= "%b %d %Y"))
+BRPR3 <- na.omit(BRPR3)
 #####
 #BRAP4
 #################
@@ -1532,6 +1622,7 @@ BRAP4$variacao_BRAP4 <- gsub('%', '', BRAP4$variacao_BRAP4, fixed = TRUE)
 BRAP4$variacao_BRAP4 <- as.numeric(BRAP4$variacao_BRAP4)
 BRAP4$variacao_BRAP4 <- BRAP4$variacao_BRAP4/100
 BRAP4$data <- as.POSIXct(strptime(BRAP4$data, format= "%b %d %Y"))
+BRAP4 <- na.omit(BRAP4)
 ###############################################################################
 
 
@@ -1544,46 +1635,67 @@ BRAP4$data <- as.POSIXct(strptime(BRAP4$data, format= "%b %d %Y"))
 #install.packages("PerformanceAnalytics")
 #install.packages("IntroCompFinR", repos="http://R-Forge.R-project.org")
 #install.packages("splitstackshape")
+#install.packages("plyr")
+library(plyr)
 library(splitstackshape)
 library(IntroCompFinR)
 
 #########
 #Criando a matriz de retornos
-ativos <- c("PETR4","OIBR3","VVAR3","COGN3","BBDC4","ITUB4","VALE3","PETR3","GGBR4",
-            "ITSA4","ABEV3","JBSS3","RENT3","B3SA3","CIEL3","BBAS3","CSNA3","USIM5",
-            "GOAU4","EMBR3","MRFG3","GOLL4","BRFS3","CYRE3","BRML3",
-            "LREN3","KLBN11","HGTX3","CCRO3","RAIL3","MGLU3","POMO4","BRKM5","TIMP3","BEEF3",
-            "NTCO3","UGPA3","AMAR3","TCSA3","TOTS3","ELET3","JHSF3","BBSE3","RAPT4",
-            "MULT3","WEGE3","EQTL3","LAME4","DTEX3","SBSP3","MRVE3","BBDC3",
-            "HBOR3","SULA11","POSI3","ECOR3","GFSA3","LCAM3","QUAL3","PRIO3","YDUQ3",
-            "CPFE3","BTOW3","LOGN3","EVEN3","ALPA4","BRSR6",
-            "EZTC3","CVCB3","SANB11","ENBR3","ENAT3","MEAL3","LIGT3","VIVT4",
-            "ELET6","ALSO3","HYPE3","BRPR3","BRAP4")
+#ativos <- c("PETR4","OIBR3","VVAR3","COGN3","BBDC4","ITUB4","VALE3","PETR3","GGBR4",
+#            "ITSA4","ABEV3","JBSS3","RENT3","B3SA3","CIEL3","BBAS3","CSNA3","USIM5",
+#            "GOAU4","EMBR3","MRFG3","GOLL4","BRFS3","CYRE3","BRML3",
+#            "LREN3","KLBN11","HGTX3","CCRO3","RAIL3","MGLU3","POMO4","BRKM5","TIMP3","BEEF3",
+#            "NTCO3","UGPA3","AMAR3","TCSA3","TOTS3","ELET3","JHSF3","BBSE3","RAPT4",
+#            "MULT3","WEGE3","EQTL3","LAME4","DTEX3","SBSP3","MRVE3","BBDC3",
+#            "HBOR3","SULA11","POSI3","ECOR3","GFSA3","LCAM3","QUAL3","PRIO3","YDUQ3",
+#            "CPFE3","BTOW3","LOGN3","EVEN3","ALPA4","BRSR6",
+#            "EZTC3","CVCB3","SANB11","ENBR3","ENAT3","MEAL3","LIGT3","VIVT4",
+#            "ELET6","ALSO3","HYPE3","BRPR3","BRAP4")
+######### 
+#MENORES DO QUE 1000 DADOS
 #AZUL4 762  BPAC11 777  BRDT3 594 CEAB3 134 CMIG4 537 CNTO3 268 CRFB3 695 FLRY3 526
 #GNDI3 510  HAPV3 508   IRBR3 687 MOVI3 805 NEOE3 218 STBP3 921 SUZB3 616
-retornos <- Reduce(function(x,y) merge(x=x, y=y, by="data"),
-                   list(PETR4,OIBR3,VVAR3,COGN3,BBDC4,ITUB4,VALE3,PETR3,GGBR4,
-                        ITSA4,ABEV3,JBSS3,RENT3,B3SA3,CIEL3,BBAS3,CSNA3,USIM5,
-                        GOAU4,EMBR3,MRFG3,GOLL4,BRFS3,CYRE3,BRML3,
-                        LREN3,KLBN11,HGTX3,CCRO3,RAIL3,MGLU3,POMO4,BRKM5,TIMP3,BEEF3,
-                        NTCO3,UGPA3,AMAR3,TCSA3,TOTS3,ELET3,JHSF3,BBSE3,RAPT4,
-                        MULT3,WEGE3,EQTL3,LAME4,DTEX3,SBSP3,MRVE3,BBDC3,
-                        HBOR3,SULA11,POSI3,ECOR3,GFSA3,LCAM3,QUAL3,PRIO3,YDUQ3,
-                        CPFE3,CNTO3,BTOW3,LOGN3,EVEN3,ALPA4,BRSR6,
-                        EZTC3,CVCB3,SANB11,ENBR3,ENAT3,MEAL3,LIGT3,HAPV3,VIVT4,
-                        ELET6,ALSO3,HYPE3,BRPR3,BRAP4))
-
+#OIBR3 RECUPERAÇÃO JUDICIAL
+#########
+lista <- list(PETR4,VVAR3,COGN3,BBDC4,ITUB4,VALE3,PETR3,GGBR4,ITSA4,
+              ABEV3,JBSS3,RENT3,B3SA3,CIEL3,BBAS3,CSNA3,USIM5,GOAU4,
+              EMBR3,MRFG3,GOLL4,BRFS3,CYRE3,BRML3,LREN3,KLBN11,HGTX3,
+              CCRO3,RAIL3,MGLU3,POMO4,BRKM5,TIMP3,BEEF3,NTCO3,UGPA3,
+              AMAR3,TCSA3,TOTS3,ELET3,JHSF3,BBSE3,RAPT4,MULT3,WEGE3,
+              EQTL3,LAME4,DTEX3,SBSP3,MRVE3,BBDC3,HBOR3,SULA11,POSI3,
+              ECOR3,GFSA3,LCAM3,QUAL3,PRIO3,YDUQ3,CPFE3,CNTO3,BTOW3,
+              LOGN3,EVEN3,ALPA4,BRSR6,EZTC3,CVCB3,SANB11,ENBR3,ENAT3,
+              MEAL3,LIGT3,HAPV3,VIVT4,ELET6,ALSO3,HYPE3,BRPR3,BRAP4)
+retornos <- join_all(lista,"data")
+retornos[is.na(retornos)] <- 0
 retornos <- retornos[,-c(1)]
 
+######
+#versao antiga
+#retornos <- Reduce(function(x,y) merge(x=x, y=y, by="data"),
+#                   list(PETR4,OIBR3,VVAR3,COGN3,BBDC4,ITUB4,VALE3,PETR3,GGBR4,
+#                        ITSA4,ABEV3,JBSS3,RENT3,B3SA3,CIEL3,BBAS3,CSNA3,USIM5,
+#                        GOAU4,EMBR3,MRFG3,GOLL4,BRFS3,CYRE3,BRML3,
+#                        LREN3,KLBN11,HGTX3,CCRO3,RAIL3,MGLU3,POMO4,BRKM5,TIMP3,BEEF3,
+#                        NTCO3,UGPA3,AMAR3,TCSA3,TOTS3,ELET3,JHSF3,BBSE3,RAPT4,
+#                        MULT3,WEGE3,EQTL3,LAME4,DTEX3,SBSP3,MRVE3,BBDC3,
+#                        HBOR3,SULA11,POSI3,ECOR3,GFSA3,LCAM3,QUAL3,PRIO3,YDUQ3,
+#                        CPFE3,CNTO3,BTOW3,LOGN3,EVEN3,ALPA4,BRSR6,
+#                        EZTC3,CVCB3,SANB11,ENBR3,ENAT3,MEAL3,LIGT3,HAPV3,VIVT4,
+#                       ELET6,ALSO3,HYPE3,BRPR3,BRAP4))
+
+
 #########
+#Construção de matrizes
+
 #Construindo a matriz de retorno medio
 retorno_medio <- colMeans(retornos)
 
-########### 
 #Matriz de covariancia
 matriz_cov <- cov(retornos)
-rownames(matriz_cov) <- ativos
-colnames(matriz_cov) <- ativos
+#rownames(matriz_cov) <- ativos
+#colnames(matriz_cov) <- ativos
 
 ###########
 taxa_livre_risco <- 0.03*0.85/360
@@ -1601,7 +1713,7 @@ carteira_min_risco
 retorno_min_anual <- (carteira_min_risco$er+1)^(264*3)
 retorno_min_anual
 carteira_min <- carteira_min_risco$weights
-carteira_min <- cbind(carteira_min,ativos)
+#carteira_min <- cbind(carteira_min,ativos)
 
 #Vamos calcular a nossa carteira mais eficiente - chamado de Tangency Portfolio
 # Carteira Eficience
@@ -1610,9 +1722,10 @@ carteira_eficiente
 retorno_ef_anual <- (carteira_eficiente$er+1)^(264*3)
 retorno_ef_anual
 carteira_ef <- carteira_eficiente$weights
-carteirae_ef <- cbind(carteira_ef,ativos)
+#carteirae_ef <- cbind(carteira_ef,ativos)
 
 ###############
+#dinheiro hipotético
 disponibilidade <- 1000
 risco_min <- retorno_min_anual*disponibilidade
 risco_min
@@ -1620,7 +1733,7 @@ risco_ef <- retorno_ef_anual*disponibilidade
 risco_ef
 
 ###############
-# Visualizaçao da saida
+# Visualizaçao gráfica da saida
 
 plot(fronteira_eficiente, plot.assets=F, col="blue", pch=16)
 
@@ -1633,5 +1746,12 @@ text(carteira_eficiente$sd, carteira_eficiente$er, labels="Carteira Eficiente", 
 tangente <- (carteira_eficiente$er - taxa_livre_risco)/carteira_eficiente$sd
 abline(a = taxa_livre_risco, b=tangente, col="green", lwd=2)
 
-View(carteira_ef)
+#Visualização das carteiras
+carteira_min[carteira_min==0] <- NA
+carteira_min <- na.omit(carteira_min)
 
+carteira_ef[carteira_ef==0] <- NA
+carteira_ef <- na.omit(carteira_ef)
+
+View(carteira_min)
+View(carteira_ef)
